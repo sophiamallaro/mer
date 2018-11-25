@@ -67,5 +67,5 @@ def make_playlist(name, ids):
     playlists = spotify.user_playlist_create(USERNAME, name, public=False)
     playlistID = playlists['id']
     ids = ids[:50]
-    spotify.user_playlist_add_tracks('al321rltkr20p7oftb0i801lk', playlistID, ids)
+    spotify.user_playlist_add_tracks(USERNAME, playlistID, ids)
     return playlistID
